@@ -357,6 +357,7 @@ functions = [
     get_number_of_comments_overall,
     get_number_of_words_overall,
     get_top_eight_long_words,
+    get_articles_with_covid,
     get_content_length_extremes,
     get_monthly_publishing_extremes
 ]
