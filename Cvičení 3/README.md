@@ -84,14 +84,15 @@ result = es.search(index=INDEX_NAME, aggs=aggs)["aggregations"]["pocet_fotek"]["
 aggs = {
     "komentovany": {
         "range": {
-            "no_of_commnets": {
-                "gt": 100
-            }
+            "field": "no_of_comments",
+            "ranges": [
+                { "from": 100.0 }
+            ]
         }
     }
 }
 
-result = es.search(index=INDEX_NAME, aggs=aggs)["aggregations"]["komentovany"]
+result = es.search(index=INDEX_NAME, aggs=aggs)["aggregations"]["komentovany"]["buckets"][0]["doc_count"]
 ```
 
 ### 13. Pro každou kategorii vypiště počet článků z roku 2022
@@ -102,6 +103,18 @@ aggs = {
     "pocet_kategorii": {
         "cardinality": {
             "field": "category.keyword"
+        },
+        "aggs": {
+            "range": {
+                "date_range": {
+                    "field": "date",
+                    "format": "yyyy-MM-dd'T'HH:mm:ss",
+                    "ranges": [
+                        { "from": "2022-01-01" } 
+                        { "to": "2021-12-31" },  
+                    ]
+                }
+            }
         }
     }
 }
