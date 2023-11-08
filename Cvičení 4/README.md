@@ -207,7 +207,61 @@ I have no name!@25f56b47c366:/opt/bitnami/spark$ spark-submit /files/uloha_3.py
 ### Bonus
 
 #### 4. Skript zjišťující počet výskytů jednotlivých slov v textovém souboru aplikujte na texty stažené z portálu iDNES.cz
+Tady bylo potřeba vzít všechny ty malé JSONy ze cvičení 1 a naházet je do jednoho velkého texťáku, páč se to pak Sparku líp, a hlavně rychleji, čte. K tomu jsem udělal skript [`bonus_idnes_merge.py`](bonus_idnes_merge.py)
 
+Pro samotné zjištění jsem udělal duplikát skriptu pro druhou úlohu do souboru `bonus_idnes.py` a akorát ho přizpůsobil pro práci s JSONy.
+
+```
+v:              2960026
+a:              2901851
+na:             2540124
+se:             2506238
+že:             1452097
+je:             1138787
+z:              1022108
+s:              932869
+o:              896146
+do:             848248
+i:              774308
+to:             768463
+za:             628206
+ve:             610588
+podle:          568569
+ale:            555659
+k:              517291
+by:             508301
+pro:            476568
+si:             448592
+po:             428122
+od:             351398
+který:          343960
+už:             340816
+které:          317570
+jako:           309034
+jeho:           280327
+tak:            277905
+až:             270238
+bude:           269914
+také:           268955
+jsou:           268117
+aby:            263251
+byl:            261716
+u:              254712
+před:           252858
+při:            223188
+která:          217610
+jen:            215097
+nebo:           213270
+má:             212372
+ze:             211972
+jsem:           211056
+však:           201677
+co:             195194
+když:           186046
+jak:            185077
+řekl:           173821
+než:            173808
+```
 
 #### 5. Seznam z úlohy 3 vraťte setříděny podle celkové utracené částky (Pro setřízení využijte RDD)
 
