@@ -131,30 +131,30 @@ most_obsure_heroes = (
 ```
 
 ```
-+----+-----------+----+--------------------+
-|  id|connections|  id|                name|
-+----+-----------+----+--------------------+
-| 306|          1| 306|              AZRAEL|
-| 620|          1| 620|          BLOWTORCH/|
-| 869|          1| 869|        CAPTAIN FATE|
-| 982|          1| 982|           CHAKRA II|
-|1073|          1|1073|   CLASS CLOWN/GLASS|
-|1167|          1|1167|        COOPER, TERI|
-|1200|          1|1200|  COVEY, LAWRENCE K.|
-|1311|          1|1311|            D'SPRYTE|
-|1460|          1|1460|             DESADIA|
-|1615|          1|1615|      DRAGO, VALERIE|
-|1684|          1|1684|              EDITOR|
-|1726|          1|1726|ELLINGTON, DR./TRAVI|
-|1840|          1|1840| FELDSTADT, DR. HANS|
-|1877|          1|1877|            FIREBOLT|
-|1890|          1|1890|          FIREFLY II|
-|1945|          1|1945|          FONG, KATY|
-|2042|          1|2042|GAMBIT DOPPELGANGER |
-|2072|          1|2072|      GARNOK REBBAHN|
-|2154|          1|2154|            GLORIOLE|
-|2176|          1|2176|            GOLEM II|
-+----+-----------+----+--------------------+
++----+-----------+--------------------+
+|  id|connections|                name|
++----+-----------+--------------------+
+| 306|          1|              AZRAEL|
+| 620|          1|          BLOWTORCH/|
+| 869|          1|        CAPTAIN FATE|
+| 982|          1|           CHAKRA II|
+|1073|          1|   CLASS CLOWN/GLASS|
+|1167|          1|        COOPER, TERI|
+|1200|          1|  COVEY, LAWRENCE K.|
+|1311|          1|            D'SPRYTE|
+|1460|          1|             DESADIA|
+|1615|          1|      DRAGO, VALERIE|
+|1684|          1|              EDITOR|
+|1726|          1|ELLINGTON, DR./TRAVI|
+|1840|          1| FELDSTADT, DR. HANS|
+|1877|          1|            FIREBOLT|
+|1890|          1|          FIREFLY II|
+|1945|          1|          FONG, KATY|
+|2042|          1|GAMBIT DOPPELGANGER |
+|2072|          1|      GARNOK REBBAHN|
+|2154|          1|            GLORIOLE|
+|2176|          1|            GOLEM II|
++----+-----------+--------------------+
 only showing top 20 rows
 ```
 
