@@ -30,14 +30,13 @@ mininum = (
 
 most_obsure_heroes = (
     connections
-    .where(f"connections = {mininum}")
     .join(names, connections.id == names.id)
+    .where(f"connections = {mininum}")
+    .select(connections.id, connections.connections, names.name)
+    .distinct() 
     .sort("name", ascending=[True])
     .show()
 )
-# mostPopular = connections.sort(functions.col("connections").desc()).first()
-# mostPopularName = names.filter(functions.col("id") == mostPopular[0]).select("name").first()
-# print(mostPopularName[0] + " is the most popular superhero with " + str(mostPopular[1]) + " co-appearances.")
 
 spark.stop()
 
