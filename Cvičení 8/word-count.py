@@ -1,4 +1,3 @@
-import argparse
 import logging
 import sys
 
@@ -26,7 +25,7 @@ def word_count(input_path):
     )
 
     def split(line):
-        yield from [str.join("", filter(str.isalpha, x)) for x in line.lower().split()]
+        yield from [str.join("", filter(str.isalpha, x))[0] for x in line.lower().split()]
 
     # compute word count
     ds = ds\
@@ -44,4 +43,4 @@ def word_count(input_path):
 if __name__ == '__main__':
     logging.basicConfig(stream=sys.stdout, level=logging.INFO, format="%(message)s")
 
-    word_count("/files/data/book.txt")
+    word_count("/files/data/")
